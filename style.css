@@ -1,0 +1,130 @@
+#logo{
+  height: 60px;
+}
+
+.bg-imagem{
+  height: 400px;
+  background-image: url(https://cdn.pixabay.com/photo/2017/09/16/19/21/salad-2756467_960_720.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#monte {
+  text-align: center;
+  color: #345511 !important;
+  margin-top: 20px;
+}
+
+#formulario {
+  border: 3px solid #345511;
+  border-radius: 9px;
+  padding: 5px;
+  color: #345511 !important;  
+}
+
+#enviar {
+  background-color: #345511 !important;
+  color: white;
+}
+
+#container-cardapio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* alinhando o formulário */
+#formulario input {
+  width: 100%;
+  clear: both;  
+}
+
+#preencha {
+  text-align: center;
+  width: 600px;
+}
+
+#calculadora {
+  border: 3px solid #B72115;
+  border-radius: 9px;
+  padding: 5px;
+  color: #B72115 !important;  
+  clear: both;
+  width: 600px;   
+}
+
+#calculadora input {
+  width: 100%;
+  clear: both;  
+}
+
+#caixaIMC {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#seuIMC {  
+  background-color: #6E0E0A;
+  color: white;
+}
+
+#consulta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#agendamento {
+  margin-top: 40px;
+  border: 3px solid #345511;
+  border-radius: 9px;
+  padding: 5px;
+  color: #345511 !important;
+  width: 600px;
+}
+
+#agendamento input {
+  width: 100%;
+  clear: both;  
+}
+
+#envioconsulta {
+   background-color: #345511 !important;
+  color: white;
+}
+a {
+  color: inherit;
+}
+
+#sobre {
+  color: #6E0E0A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  border: 3px solid #B72115;
+  border-radius: 9px;
+  padding: 5px;    
+  clear: both;
+  width: 600px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  padding: 2px;  
+}
+
+#sobre img {
+  height: 150px;
+  margin-top: 20px;
+  margin-right: 5px;
+}
+
+.footer{  
+  height: 60px;   
+  color: white !important;
+}
+
+#logofooter {
+    height: 80px;
+    justify-content: center;
+}

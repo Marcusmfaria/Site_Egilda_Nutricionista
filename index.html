@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+   <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">   
+    <title>Egilda Nutri</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+     <header class="sticky-top">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-success">
+        <!-- logo -->
+         <img id="logo" src="./img/logo_e.png" alt="">
+
+        <!-- menu hamburguer -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao2">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navegacao2">
+          <!-- itens de navegação -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="./index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#monte">Monte seu cardápio!</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#caixaIMC">Calculadora IMC</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#consulta">Marque sua consulta</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">Sobre</a>
+              </li>           
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+     <div class="d-flex align-items-center text-center text-white bg-imagem">
+        <div class="container-fluid">          
+        </div>
+      </div>
+      <h1 id="monte" class="text-black">Monte seu cardápio!</h1>
+      <div class="container-fluid mt-4 mb-4" id="container-cardapio">        
+        
+        <form id="formulario">
+          <div class="row">
+            <div class="col-md-12 text-black">
+              <h2 id="preencha" class="text-black">Preencha suas informações</h2>
+              <label class="text-black" for="appt">Seu nome: </label>
+              <input type="text" id="nome" placeholder="Nome" autocomplete="off">
+              <br>
+              <label class="text-black" for="appt">Sua idade</label>
+              <input type="text" id="idade" placeholder="idade" autocomplete="off">
+              <br>
+              <label class="text-black" for="appt">Seu peso</label>
+              <input type="text" id="peso" placeholder="peso" autocomplete="off">
+              <br>
+              <label class="text-black" for="appt">Sua altura</label>
+              <input type="text" id="altura" placeholder="altura" autocomplete="off">
+              <br>
+              <label class="text-black" for="appt">Quais suas preferências alimentares?</label>
+              <input type="text" id="preferencia" autocomplete="off">
+              <br>
+              <label class="text-black" for="appt">Quais comidas vocês não come?</label>
+              <input type="text" id="restricao" autocomplete="off">
+              <br>
+              <label class="text-black" for="appt">Se tem alguma(s) doença(s), qual(is)?</label>
+              <input type="text" id="peso" autocomplete="off">
+              <br>
+              <div class="container text-center p-2">
+                <button id="enviar" type="button" class="btn btn-white">Enviar</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="caixaIMC" class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+          <form id="calculadora">
+            <h2>Calculo do IMC</h2>
+
+              <label for="">Digite seu peso em kg</label>
+              <input id="pesoIMC" type="text" autocomplete="off">
+              <br>
+              <label for="">Digite sua altura</label>
+              <input id="alturaIMC" type="text" placeholder="Exemplo: 1.70" autocomplete="off">
+              <br>
+              <br>
+            <button id="seuIMC" type="button" class="btn btn-white" onclick="calcularIMC()">Calcular IMC</button>
+              <h3>Seu IMC</h3>
+              <input id="resultado" type="text" readonly>
+      </form>
+      </div>
+      </div>
+      </div>
+
+      <div id="consulta" class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <form id="agendamento">
+              <h2 class="text-black">Agende uma consulta:</h2>
+           <label class="text-black" for="appt">Nome do paciente: </label>
+           <input type="text" id="nome" placeholder="Nome" autocomplete="off">
+           <br>
+           <label class="text-black" for="appt">CPF: </label>
+           <input type="text" id="nome" placeholder="Nome" autocomplete="off">
+           <br>
+      <label class="text-black" for="appt">Dia da consulta:</label>
+      <input id="date" type="date">
+
+  <br>
+
+      <label class="text-black" for="appt">Selecione o horário da consulta:</label>
+
+    <input type="time" id="appt" name="appt"
+          min="18:00" max="02:00" required>
+
+    <small class="text-black">Funcionamos das 8:00 às 12:00.</small>
+    <br>
+    <div class="container text-center p-2">
+        <button id="envioconsulta" type="button" class="btn btn-black">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div> 
+          
+    </main>
+
+     <div id="sobre" class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="img-fluid" src="./img/Egilda_Nutri.jpeg" alt="Foto de Egilda">               
+          </div>     
+          <div class="col-md-6">
+            <h3>Egilda Souza Faria</h3>
+            <h3>CRN6: 18175</h3>
+            <a href=""><i class="bi bi-whatsapp text-black">WhatsApp: (xx) 99999-9999</i></a>
+            <br>
+            <a style="text-decoration: none;" target="_blank" href="https://www.instagram.com/egildasouzafaria/">
+          <i class="bi bi-instagram text-black">Instagram</i>
+        </a>
+            </div> 
+      </div>    
+      </div>       
+
+    <footer class="footer bg-success">
+      <div class="container text-center p-2">
+        <span class="text-white font-italic">Todos os direitos reservados</span>                       
+      </div>
+    </footer>
+  </body>
+</html>
